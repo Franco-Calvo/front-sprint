@@ -102,7 +102,6 @@ export default function MangasView() {
         })
       );
     }
-    console.log(categorias);
   }, [reload, categorias, pages]);
 
   function handlePrevClick() {
@@ -134,42 +133,57 @@ export default function MangasView() {
       <div className="section-manga-cont">
         <div className="container-check-cards">
           <div className="center-items">
+            <h3 className="explore-mangas">Explore</h3>
+            <div className="img-mangas-mobile">
+              <span>
+                <label className="text-mobile-manga">Adventurers</label>
+                <img src="./imagen 16.png" alt="" />
+              </span>
+              <span>
+                <label className="text-mobile-manga">Nostalgic</label>
+                <img src="./imagen 17.png" alt="" />
+              </span>
+              <span>
+                <label className="text-mobile-manga">Popular</label>
+                <img src="./imagen 18.png" alt="" />
+              </span>
+            </div>
             <div className="checkbox-container-mangas">
-              <label class="category-button2">
+              <label className="category-button2">
                 <input
                   type="checkbox"
                   name="category"
                   value="shonen"
                   onClick={checks}
                 />
-                <span class="category-label">shonen</span>
+                <span className="category-label">shonen</span>
               </label>
-              <label class="category-button3">
+              <label className="category-button3">
                 <input
                   type="checkbox"
                   name="category"
                   value="seinen"
                   onClick={checks}
                 />
-                <span class="category-label">seinen</span>
+                <span className="category-label">seinen</span>
               </label>
-              <label class="category-button4">
+              <label className="category-button4">
                 <input
                   type="checkbox"
                   name="category"
                   value="shojo"
                   onClick={checks}
                 />
-                <span class="category-label">shojo</span>
+                <span className="category-label">shojo</span>
               </label>
-              <label class="category-button5">
+              <label className="category-button5">
                 <input
                   type="checkbox"
                   name="category"
                   value="comic"
                   onClick={checks}
                 />
-                <span class="category-label">comic</span>
+                <span className="category-label">comic</span>
               </label>
             </div>
 
@@ -192,21 +206,23 @@ export default function MangasView() {
             </div>
           </div>
           <div className="prev-next">
-            {pages < 2 ? (
-              ""
-            ) : (
-              <button className="prev-next-anchor" onClick={handlePrevClick}>
-                Prev
-              </button>
-            )}
-            <label>{pages}</label>
-            {data.length == 6 || data.length == 10 ? (
-              <button className="prev-next-anchor" onClick={handleNextClick}>
-                Next
-              </button>
-            ) : (
-              ""
-            )}
+            <div className="cont-count">
+              {pages < 2 ? (
+                ""
+              ) : (
+                <button className="prev-next-anchor" onClick={handlePrevClick}>
+                  Prev
+                </button>
+              )}
+              <label className="count-pages">{pages}</label>
+              {data.length == 6 || data.length == 10 ? (
+                <button className="prev-next-anchor" onClick={handleNextClick}>
+                  Next
+                </button>
+              ) : (
+                ""
+              )}
+            </div>
           </div>
         </div>
       </div>

@@ -58,10 +58,12 @@
 
 .checkbox-container-mangas {
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
   gap: 1rem;
+  margin-left: 5rem;
   align-items: center;
   width: 90%;
+  background: white;
   margin-top: 1rem;
   flex-wrap: wrap;
 }
@@ -186,33 +188,34 @@
 .container-check-cards {
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   margin-top: 4rem;
   width: 65%;
-  gap: 4rem;  
+  gap: 4rem;
 }
 
-.container-cards-mangas{ 
+.container-cards-mangas {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   height: 100%;
   gap: 3rem;
 }
 
-.center-items{
+.center-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   gap: 2rem;
 }
 
 .prev-next {
   display: flex;
-  justify-content:flex-start;
+  justify-content: center;
   align-items: center;
   width: 20%;
   gap: 1rem;
@@ -220,7 +223,7 @@
 }
 
 .prev-next-anchor {
-  background:#ef8481 ;
+  background: #ef8481;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,26 +239,133 @@
   background: #cc716e;
 }
 
+.cont-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 
-@media (min-width: 1024px) and (max-width: 1440px)  {
+.count-pages {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 2rem;
+}
 
+.explore-mangas{ 
+  display: none;
+}
+
+.img-mangas-mobile {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .section-manga-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 50vh;
+    position: static;
+    margin-top: -80px;
+    z-index: 100;
+    border-radius: 5rem;
+  }
+
+  .explore-mangas {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.45rem;
+    font-weight: 450;
+  }
+
+  .img-mangas-mobile{ 
+    display: flex;
+    gap: 5px;
+  }
+
+  .img-mangas-mobile img{
+    width: 100%;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.8);
+   } 
+
+  .text-mobile-manga {
+    position: absolute;
+    margin-top: 4rem;
+    width: 2rem;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .img-mangas-mobile span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+  }
+
+  .checkbox-container-mangas {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mangas-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3rem;
+    width: 100%;
+  }
+  ::placeholder {
+    font-size: 1rem;
+  }
+
+  .Search {
+    font-size: 1rem;
+  }
+
+  .container-cards-mangas {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
   .container-cards-mangas {
     width: 100%;
     gap: 2rem;
-
   }
 
   .container-check-cards {
     width: 70%;
   }
 
-  .center-items{
+  .center-items {
     width: 100%;
     gap: 2rem;
-
   }
-
 }
-
-
-  
