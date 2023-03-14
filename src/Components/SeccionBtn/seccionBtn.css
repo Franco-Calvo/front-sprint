@@ -1,0 +1,155 @@
+
+.details-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+.manga-btn {
+    width: 80px;
+    height: 30px;
+    background: transparent;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9D9D9D;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.prueba {
+    background: linear-gradient(153.39deg, #F9A8D4 -13.9%, #F472B6 58.69%);
+    color: #FFFFFF;
+    margin: 0px;
+    width: 200px;
+}
+.seccionTexto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.description-manga  {
+    width: 80%;
+    text-align: justify;
+    margin-bottom: 10px;
+    margin: 1rem;
+}
+
+.sectionChapter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin: 20px 0px 20px 0px;
+}
+
+.selecChapter {
+    width: 15%;
+    height: 6%;
+    border-radius: 8px;
+}
+.puntitos{
+    width: 20%;
+    height: 2vh;
+    background-color: rgb(52, 50, 50);
+    background: #c1c1c1ad;
+    border-radius: 40px;
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 1rem;
+}
+.order-chapter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.coment-chapter {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.coment-chapter img {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-read {
+    width: 151px;
+    height: 74px;
+    background: linear-gradient(153.39deg, #F9A8D4 -13.9%, #F472B6 58.69%);
+    border-radius: 40px;
+    border: none;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+
+}
+.div-chapter{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 10px;
+   
+}
+.btn-chapter{
+    width: 70px;
+    height: 30px;
+    background: linear-gradient(153.39deg, #F9A8D4 -13.9%, #F472B6 58.69%);
+    border-radius: 40px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+@media (min-width:320px) and (max-width:768px) { 
+    .selecChapter {
+        width: 20%;
+    }
+    .p-chapter{
+        font-size: 16px;
+    }
+    .btn-read {
+        width: 120px;
+        height: 60px;   
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .order-chapter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+    }
+}

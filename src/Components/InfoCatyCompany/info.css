@@ -1,0 +1,27 @@
+.category-company{
+    width: 80%;
+    height: auto;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+.category {
+    width: 10vw;
+    background: pink;
+    border-radius: 40px;
+    border: solid 1px red;
+    font-size: 80%;
+    color: red;
+}
+.company{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    color: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
